@@ -1,0 +1,6 @@
+Version 0.1 : Mise en place initiale
+
+	Version 0.1.1 : Première page
+		- Mise en place du squelette
+		- Mise en place de la première page et des lib js
+		
