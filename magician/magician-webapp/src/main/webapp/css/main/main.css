@@ -1,0 +1,57 @@
+/* Reset */
+@import "../application/reset.css";
+
+/* Definition */
+@import "../application/font.css";
+@import "../application/constant.css";
+
+@import "../content/content.css";
+
+#main {
+	display: grid;
+	grid-template-columns: minmax(400px, 70%) minmax(200px, 30%);
+	grid-template-rows: minmax(30px, 5%) 95%;
+	margin-top:10px;
+	margin-right:10px;
+	
+	/** Taille de l'ecran, ce qui depasse est delete (à gerer dans les composants) */
+	height: 100vh;
+	overflow: hidden;
+}
+
+#mainHeader {
+	margin-left:10%;
+	font-family: var(--font-magic);
+	font-size: 22px;
+	grid-row : 1;
+	grid-column:1;
+	display:flex;
+}
+
+#mainLabel{
+	margin-top:auto;
+	margin-bottom:auto;
+	height:16px;
+}
+
+#mainMenu {
+	grid-row : 1;
+	grid-column:2;
+	height: 100%;
+}
+
+#mainMenu::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 32%;
+    right: 0;
+    border-top: 1.5px solid blue;
+}
+
+#mainContent{
+	grid-row : 2;
+	grid-column:1 / span 2;
+	overflow: auto;
+	max-height: 90%;
+}

@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Magic";
+	src: url("../../fonts/Magic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url("../../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+

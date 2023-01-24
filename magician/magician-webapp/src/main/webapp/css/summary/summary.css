@@ -1,0 +1,4 @@
+.contentBody {
+	display: grid;
+	grid-template-rows: 20% 80%;
+}

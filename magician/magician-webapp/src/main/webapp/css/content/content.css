@@ -1,0 +1,13 @@
+.contentBody {
+	width: 100%;
+	padding-top:20px;
+	padding-left:20px;
+	font-family: var(--font-content);
+}
+
+.errorMessage {
+	color: red;
+	font-size: x-large;
+	cursor: pointer;
+	margin: auto;
+}

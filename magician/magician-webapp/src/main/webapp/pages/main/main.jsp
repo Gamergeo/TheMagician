@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
@@ -18,6 +18,10 @@
 	<body>
 	
 		<div id="main">
+		
+			<div id="mainHeader">
+				<span id="mainLabel">The Magician</span>
+			</div>
 			
 			<div id="mainMenu">
 				<jsp:include page="mainMenu.jsp" />

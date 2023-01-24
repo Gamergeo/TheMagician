@@ -1,44 +1,43 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <%@include file="/pages/head/headOnlyMetadata.jsp" %>
 
 <link href="<c:url value='/css/main/mainMenu.css' />" rel="stylesheet" media="all" type="text/css">
 
-<div id="applicationName">
-	<span id="applicationLabel">The Magician</span>
-</div>
+<script type="text/javascript">
+
+	function selectMenu(element, url) {
+		$(".menuItem").removeClass("menuSelected")		
+		$(element).addClass("menuSelected");
+		$.refreshMainContent({'url' : url});
+	}
+		
+</script>
 
 <div id="menu">
 
-	<span class="menuItem">
-		<span class="menuButton" onclick="$.refreshMainContent({'url' : 'main/startContent.do'});">
-			<span class="menulabel">
-				Accueil
-			</span>
+	<span class="menuItem" onclick="selectMenu(this, 'summary/view.do');">
+		<span class="menuLabel">
+			Accueil
 		</span>
 	</span>
 	
-	<span class="menuItem">
-		<span class="menuButton" onclick="$.refreshMainContent({'url' : 'main/startContent.do'});">
-			<span class="menulabel">
-				Stock
-			</span>
+	<span class="menuItem" onclick="selectMenu(this, 'summary/view.do');">
+		<span class="menuLabel">
+			Stock
 		</span>
 	</span>
 	
-	<span class="menuItem">
-		<span class="menuButton" onclick="$.refreshMainContent({'url' : 'main/startContent.do'});">
-			<span class="menulabel">
-				Souhait
-			</span>
+	<span class="menuItem" onclick="selectMenu(this, 'summary/view.do');">
+		<span class="menuLabel">
+			Souhait
 		</span>
 	</span>
 	
-	<span class="menuItem">
-		<span class="menuButton" onclick="$.refreshMainContent({'url' : 'main/startContent.do'});">
-			<span class="menulabel">
-				Recherche
-			</span>
+	<span class="menuItem" onclick="selectMenu(this, 'summary/view.do');">
+		<span class="menuLabel">
+			Recherche
 		</span>
 	</span>
 </div>
