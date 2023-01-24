@@ -10,10 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.project.magician.model.DatabaseName;
+import com.project.magician.model.ModelObject;
 
 @Entity(name = DatabaseName.EXPANSION.TABLE)
 @Table(name = DatabaseName.EXPANSION.TABLE)
-public class Expansion implements Serializable {
+public class Expansion implements Serializable, ModelObject {
 
 	private static final long serialVersionUID = -1864542003746307771L;
 

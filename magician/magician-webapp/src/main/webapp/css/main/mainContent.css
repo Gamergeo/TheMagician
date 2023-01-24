@@ -1,12 +1,13 @@
 #mainContent {
 	display:flex;
+	background-color: var(--color-content);
 }
 
 #mainContent::before {
     content: '';
     display: block;
     position: absolute;
-    width: 32%;
+    width: 100%;
     left: 0;
-    border-top: 1.5px solid blue;
+    border-top: 1.5px solid grey;
 }

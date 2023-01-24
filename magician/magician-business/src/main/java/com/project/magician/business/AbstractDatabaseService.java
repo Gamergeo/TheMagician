@@ -5,9 +5,10 @@ import java.util.List;
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
+import com.project.magician.model.ModelObject;
 import com.project.magician.persistance.IDao;
 
-public abstract class AbstractDatabaseService<T> implements DatabaseService<T> {
+public abstract class AbstractDatabaseService<T extends ModelObject> implements DatabaseService<T> {
 	
 	public abstract IDao<T> getDao();
 	
@@ -15,6 +16,12 @@ public abstract class AbstractDatabaseService<T> implements DatabaseService<T> {
 	@Transactional
     public void saveOrUpdate(T type) {
     	getDao().saveOrUpdate(type);
+    }
+	
+	@Override
+	@Transactional
+    public void merge(T type) {
+    	getDao().merge(type);
     }
 	
 	@Override

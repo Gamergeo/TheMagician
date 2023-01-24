@@ -17,7 +17,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public abstract class AbstractDAO<T> implements IDao<T>{
+import com.project.magician.model.ModelObject;
+
+public abstract class AbstractDAO<T extends ModelObject> implements IDao<T>{
 
 	@Autowired
 	private DataSource dataSource;
@@ -72,6 +74,11 @@ public abstract class AbstractDAO<T> implements IDao<T>{
 	@Override
     public void saveOrUpdate(T type) {
         getCurrentSession().saveOrUpdate(type);
+    }
+
+	@Override
+    public void merge(T type) {
+        getCurrentSession().merge(type);
     }
 
 	@Override

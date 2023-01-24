@@ -2,7 +2,9 @@ package com.project.magician.persistance;
 
 import java.util.List;
 
-public interface IDao<T> {
+import com.project.magician.model.ModelObject;
+
+public interface IDao<T extends ModelObject> {
 
 	public void persist(T type);
     
@@ -19,4 +21,6 @@ public interface IDao<T> {
 	public void delete(Integer id);
 
 	public List<T> findAllOrderedBy(String attributeName);
+
+	void merge(T type);
 }

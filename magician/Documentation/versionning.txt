@@ -4,7 +4,11 @@ Version 0.1 : Mise en place initiale
 		- Mise en place du squelette
 		- Mise en place de la première page et des lib js
 
-	Version 0.1.2 : Affichage générale et premier squelette back
+	Version 0.1.2 : Affichage général et premier squelette back
 		- Menu, Header, Content - A finir
 		- Look général de l'application - A finir
 		- DAO / Services pour la base de Card / CardInfos / Expansion
+
+	Version 0.1.3 : Model
+		- CardInfos* : model, DAO, Service
+		- BDD

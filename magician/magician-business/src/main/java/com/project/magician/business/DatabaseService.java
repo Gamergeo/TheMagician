@@ -2,7 +2,9 @@ package com.project.magician.business;
 
 import java.util.List;
 
-public interface DatabaseService<T> {
+import com.project.magician.model.ModelObject;
+
+public interface DatabaseService<T extends ModelObject> {
 	
     public void saveOrUpdate(T type);
     
@@ -17,4 +19,6 @@ public interface DatabaseService<T> {
 	public List<T> findAllOrderBy(String attributeName);
 
 	void deleteIfPossible(Integer id);
+
+	void merge(T type);
 }

@@ -11,5 +11,5 @@
 
 <div id="bestCard">
 	Liste des meilleures cartes :
-		1 - ${card.cardInfos.name} - ${card.expansion.name}
+<%-- 		1 - ${card.languageCard.name} - ${card.languageCard.expansionCard.cardInfos.originalName} - ${card.languageCard.expansionCard.expansion.name} --%>
 </div>

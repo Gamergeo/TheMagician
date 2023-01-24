@@ -13,39 +13,29 @@
 	<artifactId>magician-model</artifactId>
 	<packaging>jar</packaging>
 	
-	<build>
-		<plugins>
-			<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>add-source</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>target/generated-sources/annotations</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!-- 	<build> -->
+<!-- 		<plugins> -->
 <!-- 			<plugin> -->
-<!-- 			    <artifactId>maven-compiler-plugin</artifactId> -->
-<!-- 			    <configuration> -->
-<!-- 			        <source>1.8</source> -->
-<!-- 			        <target>1.8</target> -->
-<!-- 			        <compilerArguments> -->
-<!-- 			        	<processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor> -->
-<!-- 			        </compilerArguments> -->
-<!-- 			    </configuration> -->
-<!-- 			</plugin> -->
-		</plugins>
-	</build>
+<!--                 <groupId>org.codehaus.mojo</groupId> -->
+<!--                 <artifactId>build-helper-maven-plugin</artifactId> -->
+<!--                 <version>3.0.0</version> -->
+<!--                 <executions> -->
+<!--                     <execution> -->
+<!--                         <id>add-source</id> -->
+<!--                         <phase>generate-sources</phase> -->
+<!--                         <goals> -->
+<!--                             <goal>add-source</goal> -->
+<!--                         </goals> -->
+<!--                         <configuration> -->
+<!--                             <sources> -->
+<!--                                 <source>target/generated-sources/annotations</source> -->
+<!--                             </sources> -->
+<!--                         </configuration> -->
+<!--                     </execution> -->
+<!--                 </executions> -->
+<!--             </plugin> -->
+<!-- 		</plugins> -->
+<!-- 	</build> -->
 
 	<dependencies>
 

@@ -1,15 +1,12 @@
 package com.project.magician.webapp.summary;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.project.magician.business.card.CardService;
-import com.project.magician.model.card.Card;
+import com.project.magician.business.card.infos.CardInfosService;
 import com.project.magician.webapp.AbstractAction;
 
 /**
@@ -20,12 +17,13 @@ import com.project.magician.webapp.AbstractAction;
 public class SummaryAction extends AbstractAction {
 	
 	@Autowired
-	private CardService cardService;
+	private CardInfosService cardInfosService;
 	
 	@PostMapping("view")
 	public ModelAndView view() {
-		List<Card> cards = cardService.findAll();
+//		cardInfosService.createTestCard();
+//		cardInfosService.updateTestCard();
 		
-		return new ModelAndView("summary/summaryView").addObject("card", cards.get(0));
+		return new ModelAndView("summary/summaryView");
 	}
 }
